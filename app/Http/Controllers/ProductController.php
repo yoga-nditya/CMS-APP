@@ -131,4 +131,13 @@ class ProductController extends Controller
         $product->delete();
         return redirect('/admin/product')->with('alert', 'Berhasil menghapus product');
     }
+
+    public function search(Request $request)
+    {
+        $keyword = $request->keyword;
+
+        $product = Product::where('name', 'LIKE', '%'.$keyword.'%')->get();
+
+        return view('admin.product.index',compact('product'));
+    }
 }

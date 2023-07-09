@@ -21,6 +21,7 @@
 
     <div class="table-responsive">
         <table class="table table-striped table-hover border">
+        </div>
             <thead>
                 <tr>
                     <th scope="col">No</th>
