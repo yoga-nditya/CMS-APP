@@ -1,5 +1,3 @@
-Kelompok 11
-
 STACK yang Digunakan :
 
 - Laravel 9
